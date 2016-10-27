@@ -73,6 +73,11 @@ public class SortTest {
         runTest(new HeapSort());
     }
 
+    @Test
+    public void testRadixSort(){
+        runTest(new RadixSort());
+    }
+
     private void checkArrayIsSorted(int[] array){
         for (int i = 0; i < array.length - 1; i++) {
             Assert.assertTrue(array[i] <= array[i+1]);
