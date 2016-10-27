@@ -56,6 +56,12 @@ public class SortTest {
         runTest(new BubbleSort());
     }
 
+    @Test
+    public void testMergeSort(){
+        runTest(new MergeSort());
+    }
+
+
     private void checkArrayIsSorted(int[] array){
         for (int i = 0; i < array.length - 1; i++) {
             Assert.assertTrue(array[i] <= array[i+1]);
