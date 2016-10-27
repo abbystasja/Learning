@@ -4,6 +4,7 @@
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
+.idea/*
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -22,11 +23,13 @@
 
 ## File-based project format:
 *.iws
+*.iml
 
 ## Plugin-specific files:
 
 # IntelliJ
 /out/
+target/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
