@@ -8,7 +8,7 @@ public class BubbleSort extends Sort{
     @Override
     public void sort(int[] input) {
         //Adding this not to run n^2 sorting complexity every time we run tests
-        assert input.length <= 100000;
+        assert input.length <= 1000;
 
         for (int i = 0; i < input.length; i++) {
             for (int j = 0; j <= i; j++) {

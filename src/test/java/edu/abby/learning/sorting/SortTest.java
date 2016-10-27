@@ -27,6 +27,8 @@ public class SortTest {
                 { 1000, 1000 },
                 { 10000, 10000 },
                 { 100000, 100000 },
+                { 1000000, 1000000 },
+                { 10000000, 10000000 }
         });
     }
 
@@ -61,6 +63,10 @@ public class SortTest {
         runTest(new MergeSort());
     }
 
+    @Test
+    public void testQuickSort(){
+        runTest(new QuickSort());
+    }
 
     private void checkArrayIsSorted(int[] array){
         for (int i = 0; i < array.length - 1; i++) {
