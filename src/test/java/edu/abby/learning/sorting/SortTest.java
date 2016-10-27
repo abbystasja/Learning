@@ -68,6 +68,11 @@ public class SortTest {
         runTest(new QuickSort());
     }
 
+    @Test
+    public void testHeapSort(){
+        runTest(new HeapSort());
+    }
+
     private void checkArrayIsSorted(int[] array){
         for (int i = 0; i < array.length - 1; i++) {
             Assert.assertTrue(array[i] <= array[i+1]);
